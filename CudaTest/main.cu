@@ -11,7 +11,7 @@ int main(){
 
 	cudaGetDeviceCount(&count);
 
-	for(int i=0; i<count; i++){
+	for(int i=0; i<count; i++){ 
 		cudaGetDeviceProperties(&prop,i);
 		cout<<"---Some Information for the Device---"<<endl;
 		cout<<"Name : " << prop.name << endl;
