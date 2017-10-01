@@ -5,13 +5,13 @@
 using namespace std;
 
 int main(){
-	cudaDeviceProp prop;
+	cudaDeviceProp prop; 
 
-	int count;
+	int counted;
 
-	cudaGetDeviceCount(&count);
+	cudaGetDeviceCount(&counted);
 
-	for(int i=0; i<count; i++){ 
+	for(int i=0; i<counted; i++){ 
 		cudaGetDeviceProperties(&prop,i);
 		cout<<"---Some Information for the Device---"<<endl;
 		cout<<"Name : " << prop.name << endl;
